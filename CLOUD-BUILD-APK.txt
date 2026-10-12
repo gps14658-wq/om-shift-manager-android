@@ -1,0 +1,13 @@
+BUILD APK WITHOUT INSTALLING ANDROID STUDIO
+
+This project includes a GitHub Actions workflow at .github/workflows/build-apk.yml.
+
+1. Sign in to GitHub and create a new empty repository (for example, om-shift-manager-android).
+2. Upload the contents of this project folder to the repository, keeping the .github/workflows/build-apk.yml file and folder structure.
+3. Open the repository's Actions tab.
+4. Select "Build Android APK" and click "Run workflow" (or push to the main branch).
+5. Wait for the run to finish successfully.
+6. Open the completed workflow run and download the artifact named "om-shift-manager-debug-apk".
+7. Extract the downloaded artifact ZIP. It contains app-debug.apk. Transfer the APK to your Android phone and install it. You may need to allow installation from that source in Android settings.
+
+This creates a DEBUG APK, not a Play Store release APK. GitHub account/repository access is required. The APK has not yet been built or tested; the workflow must finish successfully before an APK is available.
